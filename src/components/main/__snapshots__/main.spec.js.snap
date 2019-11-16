@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main (Snapshot) renders with default props 1`] = `
+"<div>
+  <section className='info' />
+  <Paginator eventHandler={[Function: bound switchPage]} currentPage={1} pages={0} next={[undefined]} prev={[undefined]} />
+</div>"
+`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile (Snapshot) renders in page 0 1`] = `
+"<div className='paginator'>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    1
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    2
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    3
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    4
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    5
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    6
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    Next
+  </button>
+</div>"
+`;
+
+exports[`Profile (Snapshot) renders in page 10 1`] = `
+"<div className='paginator'>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    Prev
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    5
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    6
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    7
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    8
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    9
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    10
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    11
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    12
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    13
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    14
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    15
+  </button>
+  <button className='paginator__button' onClick={[Function: onClick]}>
+    Next
+  </button>
+</div>"
+`;

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile (Snapshot) renders with all data 1`] = `
+"<div className='info__frame'>
+  <h1 className='info__title'>
+    Ants in my Eyes Johnson
+     (
+    unknown
+    )
+  </h1>
+  <img src='https://rickandmortyapi.com/api/character/avatar/20.jpeg' alt='Ants in my Eyes Johnson' />
+  <p>
+    Human
+     - Human with ants in his eyes
+  </p>
+  <p>
+    Gender: 
+    Male
+  </p>
+  <details>
+    <summary>
+      Location
+    </summary>
+    <p>
+      Interdimensional Cable
+    </p>
+    <p>
+      Type: 
+      type
+    </p>
+    <p>
+      Dimension: 
+      dimension
+    </p>
+  </details>
+  <details>
+    <summary>
+      Origin
+    </summary>
+    <p>
+      Origin
+    </p>
+    <p>
+      Type: 
+      type
+    </p>
+    <p>
+      Dimension: 
+      dimension
+    </p>
+  </details>
+  <details>
+    <summary>
+      Episodes
+    </summary>
+    <p>
+      Pilot
+    </p>
+  </details>
+</div>"
+`;
+
+exports[`Profile (Snapshot) renders with some missing data 1`] = `
+"<div className='info__frame'>
+  <h1 className='info__title'>
+    Ants in my Eyes Johnson
+     (
+    unknown
+    )
+  </h1>
+  <img src='https://rickandmortyapi.com/api/character/avatar/20.jpeg' alt='Ants in my Eyes Johnson' />
+  <p>
+    Human
+     - Human with ants in his eyes
+  </p>
+  <p>
+    Gender: 
+    Male
+  </p>
+  <details>
+    <summary>
+      Location
+    </summary>
+    <p>
+      Interdimensional Cable
+    </p>
+  </details>
+  <details>
+    <summary>
+      Origin
+    </summary>
+    <p>
+      unknown
+    </p>
+  </details>
+  <details>
+    <summary>
+      Episodes
+    </summary>
+    <p>
+      Pilot
+    </p>
+  </details>
+</div>"
+`;

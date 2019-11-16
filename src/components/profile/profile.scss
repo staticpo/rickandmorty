@@ -1,0 +1,29 @@
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding: 10px;
+
+  .info__frame {
+    border: solid 1px #aaa;
+    background-color: #ccc;
+    padding: 8px;
+
+    p {
+      margin: 0;
+    }
+
+    summary {
+      cursor: pointer;
+    }
+
+    details:first-of-type {
+      margin-top: 5px;
+    }
+  }
+
+  .info__title {
+    margin: 0 0 10px;
+  }
+}
