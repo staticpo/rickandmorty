@@ -11,7 +11,6 @@ const parser = (currentPage, handler) => {
   // Get the required page of character results
   axios.get(CHARACTERS_URL + currentPage)
     .then(function (response) {
-
       const pages = {
         currentPage
       };
@@ -32,11 +31,11 @@ const parser = (currentPage, handler) => {
         const originPromise = profiles[key].origin.url ? axiosGet(profiles[key].origin.url) : axiosGet("", false);
 
         // Get the actual info with axios
-        axios.all([
+        Promise.all([
           locationPromise,
           originPromise,
         ])
-          .then(axios.spread((locResp, origResp) => {
+          .then(function ([locResp, origResp]) {
             // If we retrieved the location data, populate it.
             if(locResp && locResp.status === 200) {
               // add the type and dimension attributes to the location object on each profile
@@ -55,11 +54,11 @@ const parser = (currentPage, handler) => {
                 dimension: origResp.data.dimension,
               };
             }
-          }))
+          })
           .then(() => {
             //Iterate over episodes and get their names
             let episodesURLArray = profiles[key].episode.map(url => axios.get(url));
-            axios.all(episodesURLArray)
+            Promise.all(episodesURLArray)
               .then((epResponse) => {
                 const names = epResponse.map(r => r.data.name);
                 profiles[key].episodes = names;
@@ -80,7 +79,7 @@ const parser = (currentPage, handler) => {
  * Get the Page number from a URL
  * @param {string} url
  */
-const getPageNumberFromURL = (url) => {
+export const getPageNumberFromURL = (url) => {
   const page = url.match(/page=([0-9]+)/);
   return page ? parseInt(page[1]) : undefined;
 };
@@ -88,7 +87,7 @@ const getPageNumberFromURL = (url) => {
 /**
  *  Returns an axios promise, to use inside an axios.all call
  */
-const axiosGet = (url, enabled = true) => {
+export const axiosGet = (url, enabled = true) => {
   if(enabled) {
     return axios.get(url);
   } else {
